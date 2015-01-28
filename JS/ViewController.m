@@ -7,21 +7,43 @@
 //
 
 #import "ViewController.h"
+#import "JSEngine.h"
+#import "Object.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong) JSEngine *jsEngine;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad;
+{
+    self.jsEngine = [JSEngine new];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated;
+{
+    [super viewDidAppear:animated];
+    
+    JSValue *function = self.jsEngine.context[@"hello"];
+    JSValue* result = [function callWithArguments:nil];
+    NSString *message = [result toString];
+    
+    [self showAlertWithMessage:message];
 }
 
+- (void)showAlertWithMessage:(NSString *)message;
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:message message:nil delegate:nil cancelButtonTitle:@"Start" otherButtonTitles:nil];
+    [alert show];
+}
+
+- (IBAction)submit:(id)sender {
+    
+    self.jsEngine.context[@"object"] = [Object new];
+    JSValue *function = self.jsEngine.context[@"showAlert"];
+    [function callWithArguments:@[self.textField.text]];
+}
 @end

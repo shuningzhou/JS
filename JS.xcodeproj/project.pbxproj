@@ -14,6 +14,9 @@
 		6182083D1A793E6C00D158EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6182083C1A793E6C00D158EB /* Images.xcassets */; };
 		618208401A793E6C00D158EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6182083E1A793E6C00D158EB /* LaunchScreen.xib */; };
 		6182084C1A793E6C00D158EB /* JSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6182084B1A793E6C00D158EB /* JSTests.m */; };
+		618208591A79417D00D158EB /* JSEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 618208581A79417D00D158EB /* JSEngine.m */; };
+		6182085C1A79423700D158EB /* lib.js in Resources */ = {isa = PBXBuildFile; fileRef = 6182085B1A79423700D158EB /* lib.js */; };
+		6182085F1A794BF700D158EB /* Object.m in Sources */ = {isa = PBXBuildFile; fileRef = 6182085E1A794BF700D158EB /* Object.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		618208451A793E6C00D158EB /* JSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6182084A1A793E6C00D158EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6182084B1A793E6C00D158EB /* JSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSTests.m; sourceTree = "<group>"; };
+		618208571A79417D00D158EB /* JSEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSEngine.h; sourceTree = "<group>"; };
+		618208581A79417D00D158EB /* JSEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSEngine.m; sourceTree = "<group>"; };
+		6182085B1A79423700D158EB /* lib.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = lib.js; sourceTree = "<group>"; };
+		6182085D1A794BF700D158EB /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Object.h; sourceTree = "<group>"; };
+		6182085E1A794BF700D158EB /* Object.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Object.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 		618208231A793E6C00D158EB = {
 			isa = PBXGroup;
 			children = (
+				6182085A1A79423700D158EB /* Javascripts */,
 				6182082E1A793E6C00D158EB /* JS */,
 				618208481A793E6C00D158EB /* JSTests */,
 				6182082D1A793E6C00D158EB /* Products */,
@@ -81,6 +90,10 @@
 		6182082E1A793E6C00D158EB /* JS */ = {
 			isa = PBXGroup;
 			children = (
+				618208571A79417D00D158EB /* JSEngine.h */,
+				618208581A79417D00D158EB /* JSEngine.m */,
+				6182085D1A794BF700D158EB /* Object.h */,
+				6182085E1A794BF700D158EB /* Object.m */,
 				618208331A793E6C00D158EB /* AppDelegate.h */,
 				618208341A793E6C00D158EB /* AppDelegate.m */,
 				618208361A793E6C00D158EB /* ViewController.h */,
@@ -117,6 +130,14 @@
 				6182084A1A793E6C00D158EB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6182085A1A79423700D158EB /* Javascripts */ = {
+			isa = PBXGroup;
+			children = (
+				6182085B1A79423700D158EB /* lib.js */,
+			);
+			path = Javascripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +223,7 @@
 				6182083B1A793E6C00D158EB /* Main.storyboard in Resources */,
 				618208401A793E6C00D158EB /* LaunchScreen.xib in Resources */,
 				6182083D1A793E6C00D158EB /* Images.xcassets in Resources */,
+				6182085C1A79423700D158EB /* lib.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				618208591A79417D00D158EB /* JSEngine.m in Sources */,
 				618208381A793E6C00D158EB /* ViewController.m in Sources */,
 				618208351A793E6C00D158EB /* AppDelegate.m in Sources */,
+				6182085F1A794BF700D158EB /* Object.m in Sources */,
 				618208321A793E6C00D158EB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
