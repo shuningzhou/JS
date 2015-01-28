@@ -27,8 +27,7 @@
 {
     [super viewDidAppear:animated];
     
-    JSValue *function = self.jsEngine.context[@"hello"];
-    JSValue* result = [function callWithArguments:nil];
+    JSValue* result = [self.jsEngine runFunction:@"hello" withParameters:nil];
     NSString *message = [result toString];
     
     [self showAlertWithMessage:message];
@@ -40,10 +39,9 @@
     [alert show];
 }
 
-- (IBAction)submit:(id)sender {
-    
-    self.jsEngine.context[@"object"] = [Object new];
-    JSValue *function = self.jsEngine.context[@"showAlert"];
-    [function callWithArguments:@[self.textField.text]];
+- (IBAction)submit:(id)sender;
+{
+    [self.jsEngine setJSValue:@"object" withNativeObject:[Object new]];
+    [self.jsEngine runFunction:@"showAlert" withParameters:@[self.textField.text]];
 }
 @end

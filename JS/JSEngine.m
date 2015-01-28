@@ -35,6 +35,17 @@
     return jsScript;
 }
 
+- (void)setJSValue:(NSString*)valueName withNativeObject:(id)object;
+{
+    self.context[valueName] = object;
+}
 
+- (id)runFunction:(NSString*)functionName withParameters:(NSArray*)parameters;
+{
+    JSValue *function = self.context[functionName];
+    JSValue* result = [function callWithArguments:parameters];
+    
+    return result;
+}
 
 @end

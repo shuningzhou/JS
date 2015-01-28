@@ -13,4 +13,8 @@
 
 @property (nonatomic, strong) JSContext *context;
 
+- (void)setJSValue:(NSString*)valueName withNativeObject:(id)object;
+
+- (id)runFunction:(NSString*)functionName withParameters:(NSArray*)parameters;
+
 @end

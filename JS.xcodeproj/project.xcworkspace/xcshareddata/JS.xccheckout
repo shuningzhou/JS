@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>65DD562B-FA7E-44AA-B02D-59475D27B2C5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>JS</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3282B7A43434A017DE086DFFCF62E32D7452C7EE</key>
+		<string>https://github.com/shuningzhou/JS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>JS.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3282B7A43434A017DE086DFFCF62E32D7452C7EE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/shuningzhou/JS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3282B7A43434A017DE086DFFCF62E32D7452C7EE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3282B7A43434A017DE086DFFCF62E32D7452C7EE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>JS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

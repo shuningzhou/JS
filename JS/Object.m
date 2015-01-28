@@ -15,7 +15,7 @@
 
 -(void)showAlert:(NSString*)message;
 {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:message message:nil delegate:nil cancelButtonTitle:@"Start" otherButtonTitles:nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:message message:nil delegate:nil cancelButtonTitle:@"Close" otherButtonTitles:nil];
     [alert show];
 }
 
